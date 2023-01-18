@@ -18,6 +18,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -113,7 +115,7 @@ public class ECommerceTest {
     }
 
     @Test
-    public void cartControllerTest(){
+    public void cartControllerTest() throws IOException {
         User user = new User();
         user.setUsername("test");
 

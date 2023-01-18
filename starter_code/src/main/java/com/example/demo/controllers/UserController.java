@@ -60,7 +60,6 @@ public class UserController {
 
 		user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
 
-
 		userRepository.save(user);
 		log.info("User Added Successfully");
 		return ResponseEntity.ok(user);
