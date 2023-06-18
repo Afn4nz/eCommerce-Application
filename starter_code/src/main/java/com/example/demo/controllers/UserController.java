@@ -20,7 +20,8 @@ import com.example.demo.model.requests.CreateUserRequest;
 
 @RestController
 @RequestMapping("/api/user")
-public class UserController {
+public class
+UserController {
 
 	private Logger log = LoggerFactory.getLogger(CartController.class);
 
